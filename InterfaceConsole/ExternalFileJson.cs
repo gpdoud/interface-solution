@@ -8,6 +8,9 @@ namespace InterfaceConsole {
 
     public class ExternalFileJson : IExternalFile {
 
+        public string Debug() {
+            return string.Empty;
+        }
         public string ToFile(string Message) {
             return "{'file': '" + Message + "'}";
         }
